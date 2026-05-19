@@ -1,0 +1,25 @@
+{
+	"providers": {
+		"lmstudio": {
+			"baseUrl": "http://localhost:1234/v1",
+			"api": "openai-completions",
+			"apiKey": "key",
+			"models": [
+				{
+					"id": "google/gemma-4-e4b",
+					"name": "Gemma4:E4B",
+					"reasoning": true,
+					"input": ["text", "image"],
+					"contextWindow": 131072
+				},
+				{
+					"id": "openai/gpt-oss-20b",
+					"name": "GPT-OSS-20B",
+					"reasoning": true,
+					"input": ["text"],
+					"contextWindow": 131072
+				}
+			]
+		}
+	}
+}
